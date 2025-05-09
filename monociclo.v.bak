@@ -1,0 +1,30 @@
+module monociclo (
+	input						clk_i,
+	input						rst_ni,
+	output		[31:0]	monitor_o
+);
+	//Sección de declaración de señales
+	//IF - Instruction Fetch
+	wire			[31:0]	if_inst_w;
+	wire						hit_w;
+	wire			[6:0]		opcode_w;
+	//RF - Register File write
+	wire						rf_write_w;
+	
+	//Asignación de señales
+	assign					opcode_w = if_inst_w[6:0];
+
+	//Etapa de Fetch
+	Fetch Fetch_Stage(
+		.clk_i		(clk_i),
+		.rst_ni		(rst_ni),
+		.if_inst_o	(if_inst_w),
+		.hit_o		(hit_w)
+	);
+	
+	//Etapa de Decodificación
+	decoder Deco_Stage(
+		.opcode_i	(opcode_w),
+		.rfwrite_o	(rf_write_w)
+	);
+endmodule 

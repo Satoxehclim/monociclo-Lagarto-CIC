@@ -1,0 +1,448 @@
+m255
+K4
+z2
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UPIIPuebla/Arquitectura de Computadoras/Fetch/simulation/modelsim
+vio_buf_opdrn
+Z1 2c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v
+Z2 !s110 1744332383
+!i10b 1
+!s100 ;YWCoUf19ob?4V;JBdnXh1
+IKhPKBX`NmAUmoD1`OUX?S2
+R0
+Z3 w1536818959
+Z4 8c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v
+Z5 Fc:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v
+!i122 1
+L0 248 22
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z8 !s108 1744332383.000000
+!s107 c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v|
+Z9 !s90 -reportprogress|300|-vlog01compat|-work|sgate_ver|c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v|
+!i113 0
+Z10 o-vlog01compat -work sgate_ver -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+vio_buf_tri
+R1
+R2
+!i10b 1
+!s100 QbX89A@J@BSYR6gkAWnG<0
+ICNQ4eBBk[a;2LkSk:RWKQ3
+R0
+R3
+R4
+R5
+!i122 1
+L0 220 23
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 c:/intelfpga_lite/18.1/quartus/eda/sim_lib/sgate.v|
+R9
+!i113 0
+R10
+R11
+vmux21
+R1
+R2
+!i10b 1
+!s100 F4^@`bnl;FG=5Eih=59cK2
+ImL3e>XDEegI9_kKj>Fn7;0
+R0
+R3
+R4
+R5
+!i122 1
+L0 190 26
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_add
+R1
+R2
+!i10b 1
+!s100 `8i1VjXJP[C@VdQ2j5Iaa3
+I<gzIFSHc@T6]Z3lHY7Z693
+R0
+R3
+R4
+R5
+!i122 1
+L0 18 74
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_addsub
+R1
+R2
+!i10b 1
+!s100 cJlF5DjPB[kYjRJY[FZAa2
+Ii6>_6OjhFFM4QdH2b6VPS1
+R0
+R3
+R4
+R5
+!i122 1
+L0 95 91
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_bus_mux
+R1
+R2
+!i10b 1
+!s100 QOeWI]:_0=40O>T3bi1j63
+I6;l6`72:5?M6YO9F;^ZaF3
+R0
+R3
+R4
+R5
+!i122 1
+L0 1072 59
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_decoder
+R1
+R2
+!i10b 1
+!s100 ;6AJ][n;Yi8ZKd32HjA0h3
+IS1fGR@UD=O3V;65AXlB3c2
+R0
+R3
+R4
+R5
+!i122 1
+L0 1036 32
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_div
+R1
+R2
+!i10b 1
+!s100 aZ8XG<YcR2JVYVjTAo_BB2
+I8Fj;<XYD3D[K=Th=nb>ZH2
+R0
+R3
+R4
+R5
+!i122 1
+L0 394 85
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_latch
+R1
+R2
+!i10b 1
+!s100 328Yi<PCUVoBg8g0Yh9^11
+I[=8R6UBJKE8g;nIh0;baY3
+R0
+R3
+R4
+R5
+!i122 1
+L0 1135 17
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_left_shift
+R1
+R2
+!i10b 1
+!s100 ]M4zPb2JCOI3alzzh_BCQ0
+IiGmQkBQMNho[QJFO1gdIf1
+R0
+R3
+R4
+R5
+!i122 1
+L0 572 72
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_less_than
+R1
+R2
+!i10b 1
+!s100 [JL[^zBS1i_ZclPYnEXeP0
+IcFN6YePV6HB57O`XiYQ300
+R0
+R3
+R4
+R5
+!i122 1
+L0 853 88
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_mod
+R1
+R2
+!i10b 1
+!s100 MzZ8eJ5<I=@QS>@zKe<K=2
+IW<ONPYE5XeiJM=AM6=0020
+R0
+R3
+R4
+R5
+!i122 1
+L0 483 85
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_mult
+R1
+R2
+!i10b 1
+!s100 HRV[KU9maHA4;<mLanMkf0
+Ike1AHiaEK@VBICji4aQIL2
+R0
+R3
+R4
+R5
+!i122 1
+L0 274 68
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_mux
+R1
+R2
+!i10b 1
+!s100 hzeK>FRUhU=WzLD[M^jC10
+INI[gc7dS5PkQTdLbYJ@TE1
+R0
+R3
+R4
+R5
+!i122 1
+L0 945 42
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_right_shift
+R1
+R2
+!i10b 1
+!s100 5Z;a7bdNNk^eiD_30mfA60
+IPc?R965^bBXIV]ahWOSM52
+R0
+R3
+R4
+R5
+!i122 1
+L0 649 79
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_rotate_left
+R1
+R2
+!i10b 1
+!s100 bdnm>9MYk7cGB2agVd3CJ1
+IXIm3Nz_6JgB]jD;U:fiH52
+R0
+R3
+R4
+R5
+!i122 1
+L0 732 57
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_rotate_right
+R1
+R2
+!i10b 1
+!s100 KooSfRObMMRjRcjK3bkfK1
+I[oGJO@fSMK`S_aS6oiL782
+R0
+R3
+R4
+R5
+!i122 1
+L0 793 56
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+voper_selector
+R1
+R2
+!i10b 1
+!s100 4YVK14dUeh:e_1i^?m^C`1
+IK@MfcC673m@^0ncR_[UmV3
+R0
+R3
+R4
+R5
+!i122 1
+L0 991 41
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11
+vtri_bus
+R1
+R2
+!i10b 1
+!s100 SQ?Qdmf>aTcM0jD4i3SCH3
+IoRZfLcN0SKMoY;US;IfZ60
+R0
+R3
+R4
+R5
+!i122 1
+L0 347 43
+R6
+R7
+r1
+!s85 0
+31
+R8
+R12
+R9
+!i113 0
+R10
+R11

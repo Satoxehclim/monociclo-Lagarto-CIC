@@ -1,0 +1,26 @@
+module Fetch (
+	input							clk_i,
+	input							rst_ni,
+	output			[31:0]	if_inst_o
+);
+	//Sección de declaración de señales
+	wire				rst_addr_w;
+	reg				pc_next_r;
+	wire				pc_w;
+
+	//Inicialización de señales
+	assign			rst_addr_w = 32'b0;
+	
+	//Definición de un FFD
+	always @(posedge clk_i, negedge rst_ni)
+	begin
+		if (!rst_ni)
+			begin
+				pc_next_r <= rst_addr_w;
+			end
+		else
+			begin
+				pc_next_r <= pc_next_r + 32'h4;
+			end
+	end
+endmodule 

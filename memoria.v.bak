@@ -1,0 +1,58 @@
+module icache(
+	//Señales generales
+	input						clk_i,
+	//Bus de direcciones
+	input			[31:0]	pc_i,
+	//Bus de datos de entrada
+	input						we_i,
+	input			[31:0]	inst_i,
+	//Bus de datos de salida
+	input						re_i,
+	output		[31:0]	inst_o,
+	//Señales de memoria
+	output					hit
+);
+	//Definición de la memoria
+	reg			[31:0]	memoria	[0:255];
+	reg			[31:0]	valid;
+	reg			[19:0]	tag		[0:255];
+	wire			[7:0]		idx_w;
+	wire			[19:0]	tag_iw;
+	reg			[7:0]		idx_r;
+	wire			[19:0]	tag_mw;
+	wire						valid_w;
+
+	//Bus de direcciones
+	/*
+	  31 - 10		9 - 2			 1- 0
+	----------------------------------
+	|  TAG		| IDX				| BOff|
+	----------------------------------
+	000000000000
+	000000000100
+	000000001000
+	000000001100
+	000000010000
+	
+	*/
+	assign		idx_w = pc_i[9:2];
+	assign		tag_iw	= pc_i[31:10];
+	//Puerto de Escritura
+	always @(posedge clk_i)
+	begin
+		if (we)
+			begin
+				memoria[idx_w] <= inst_i;
+				valid[idx_w]	<=	1'b1;
+				tag[idx_w]		<=	tag_iw;
+			end
+		idx_r <= idx_w;
+	end
+	
+	assign	tag_mw 	= memoria[idx_r];
+	assign	valid_w	= valid[idx_r];
+	
+	assign 	hit = ((tag_mw == tag_iw) && valid_w) ? 1'b1 : 1'b0;
+	assign	inst_o 	= (hit) ? memoria[idx_r] : 32'b0;
+
+endmodule 
